@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.humanize',
+    'demo.users',
 
     # deps
     'mptt',
@@ -139,6 +140,9 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# Auth
+AUTH_USER_MODEL = 'users.User'
 
 
 # Internationalization
